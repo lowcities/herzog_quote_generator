@@ -1,0 +1,95 @@
+
+@font-face { font-family: '1942report'; src: url('/css/webfont/1942report/1942report.eot?#iefix') format('embedded-opentype'), url('/css/webfont/1942report/1942report.woff') format('woff'), url('/css/webfont/1942report/1942report.ttf') format('truetype'), url('/css/webfont/1942report/1942report.svg#1942report') format('svg'); font-weight: normal; font-style: normal; }
+
+* {
+  font-family: '1942report';
+}
+
+body {
+  background: url('../img/ghosttrees.jpg') top;
+  background-repeat: repeat space;
+  
+  
+}
+header h1 {
+  background-color: rgba(255, 255, 255, .4);
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px 5px;
+  text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee, 
+    2px 1px 1px #ccc, 1px 2px 1px #eee,
+    3px 2px 1px #ccc, 2px 3px 1px #eee,
+    4px 3px 1px #ccc, 3px 4px 1px #eee,
+    5px 4px 1px #ccc, 4px 5px 1px #eee,
+    6px 5px 1px #ccc, 5px 6px 1px #eee,
+    7px 6px 1px #ccc;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+footer{
+  text-align: center;
+}
+#quoteContainer {
+  display: flex;
+  flex-direction: column;
+	margin: 0 auto;
+  position: relative;
+  width: 80%;
+  height: 40%;
+  padding-top: 40px;
+}
+#quoteBox {
+  background: white;
+  opacity: .8;
+  height: 0 auto;
+  padding: 20px;
+}
+#quoteBox h4 {
+  text-align: center;
+  font-size: 1.3em;
+}
+.photoBox {
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding-bottom: 70%;
+  width: 100%;
+}
+
+/*Button Styles
+====================================*/
+.quoteButton {
+  background-color: grey;
+	margin: 20px auto;
+  border: black 2px groove;
+  width: 100px;
+  height: 30px;
+}
+.quoteButton:hover {
+  color: white;
+	background-color: dimgrey;
+  border: black 3px groove;
+	font-weight: 900;
+  letter-spacing: 5px;
+  width: 120px;
+  transition: all 100ms ease-in;
+}
+
+/*Media Queries
+=====================================*/
+
+@media screen and ( min-width: 60em ) {
+  
+  header h1 {
+    width: 60%;
+  }
+  .photoBox {
+	 padding-bottom: 40%;
+}
+}
